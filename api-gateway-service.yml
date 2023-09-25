@@ -16,8 +16,8 @@ cloud:
       - id: CUSTOMER-SERVICE
         uri: lb://CUSTOMER-SERVICE
         predicates:
-          - Path=/api/CUSTOMER/**
+          - Path=/CUSTOMER/**
       - id: ACCOUNT-SERVICE
         uri: lb://ACCOUNT-SERVICE
         predicates:
-          - Path=/api/ACCOUNT/**
+          - Path=/ACCOUNT/**
