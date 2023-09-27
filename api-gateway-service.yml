@@ -21,3 +21,8 @@ cloud:
         uri: lb://ACCOUNT-SERVICE
         predicates:
           - Path=/ACCOUNT/**
+      - id: AUTH-SERVICE
+        uri: lb://AUTH-SERVICE
+        predicates:
+          - Path=/authenticate/**
+     
